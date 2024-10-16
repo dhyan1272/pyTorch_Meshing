@@ -7,7 +7,8 @@ bash Miniconda3-latest-Linux-x86_64.sh -p ~/scratch/miniconda3x86 \
 source ~/.bashrc \
 module load gcc \
 module load cuda/8.1 \
-conda create --name torch-env5 python=3.9 \
+conda create --name torch-env python=3.9 \
+conda activate torch-env \
 conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia \
 conda install pyg=*=*cu* -c pyg \
 conda install conda-forge::torch-scatter \
