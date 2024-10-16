@@ -12,6 +12,8 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvi
 conda install pyg=*=*cu* -c pyg \
 conda install conda-forge::torch-scatter \
 conda install esri::torch-cluster \
+python -m pip install -U matplotlib (Donot do conda install, it breaks, Resolve later) 
+
 ## Checks
 python --version \
 python -c "import torch; print(torch.version.cuda)" \
